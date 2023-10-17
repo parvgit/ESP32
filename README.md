@@ -1,6 +1,27 @@
+# Initializing in Arduino
+
+Configure Board Manager as shown below.
+
+![image](https://github.com/parvgit/ESP32/blob/main/InstallBoardManager.jpg?raw=true)
+
+# Install the USB-UART driver
+Using the information available at esp32.net, determine the USB-UART bridge chip that is used in your ESP32 dev kit. I discovered that mine uses CP2102.
+
+Once you have the model number, you need to find the driver that is appropriate for your operating system.
+
+To do this, go to the Silicon Labs website. 
+
+http://txplo.re/cp210x
+
+This link will take you directly to the driver download page. 
+
+Once  Driver is installed Board will show the COM Port in Device manager 
+
+![image](https://github.com/parvgit/ESP32/blob/main/UARTBridge.jpg)
+
 # ESP32
 ![image](https://github.com/parvgit/ESP32/blob/main/ESP32-Pinout.jpg?raw=true)
-https://github.com/parvgit/ESP32/blob/main/ESP32-Pinout.jpg
+
 
 # ESP32 Peripherals Features
 18 Analog-to-Digital Converter (ADC) channels
