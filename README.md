@@ -1,5 +1,5 @@
 # ESP32
-
+![image](https://github.com/parvgit/ESP32/blob/main/ESP32-Pinout.jpg?raw=true)
 https://github.com/parvgit/ESP32/blob/main/ESP32-Pinout.jpg
 
 ESP32 Peripherals Features
