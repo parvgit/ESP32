@@ -1,4 +1,4 @@
-# Initializing in Arduino
+# Initializing in Arduino IDE
 
 Configure Board Manager as shown below.
 
