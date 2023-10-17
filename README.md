@@ -31,7 +31,9 @@ In my system board is communicating on COM12 PORT. Check it on device manager be
 
 ![image](https://github.com/parvgit/ESP32/blob/main/FirstCode.jpg)
 
+## Once Uploaded successfully click on Enable button on Board to run the code.
 
+![image](https://github.com/parvgit/ESP32/blob/main/CodeUploaded.jpg)
 # ESP32
 ![image](https://github.com/parvgit/ESP32/blob/main/ESP32-Pinout.jpg?raw=true)
 
