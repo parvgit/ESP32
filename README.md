@@ -1,5 +1,7 @@
 # ESP32
 
+https://github.com/parvgit/ESP32/blob/main/ESP32-Pinout.jpg
+
 ESP32 Peripherals Features
 18 Analog-to-Digital Converter (ADC) channels
 10 Capacitive sensing GPIOs
