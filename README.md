@@ -2,7 +2,7 @@
 ![image](https://github.com/parvgit/ESP32/blob/main/ESP32-Pinout.jpg?raw=true)
 https://github.com/parvgit/ESP32/blob/main/ESP32-Pinout.jpg
 
-ESP32 Peripherals Features
+# ESP32 Peripherals Features
 18 Analog-to-Digital Converter (ADC) channels
 10 Capacitive sensing GPIOs
 3 UART interfaces
@@ -14,7 +14,7 @@ ESP32 Peripherals Features
 GPIO Pins
 ESP32 Wroom32 DevKit has total 25 GPIOs out of that few pins are Input only Pins,
 
-Input Only Pins
+# Input Only Pins
 
 GPIO 34
 GPIO 35
@@ -22,7 +22,7 @@ GPIO 36
 GPIO 39
 Not all pins have input pullup, you need external pullup on these pins when using as input pullup.
 
-Pins with internal pull up INPUT_PULLUP
+# Pins with internal pull up INPUT_PULLUP
 
 GPIO14
 GPIO16
@@ -42,7 +42,7 @@ GPIO32
 GPIO33
 In arduino to use these pins you can simply use common commands
 
-Example: To make GPIO22 as input and GPIO23 as output
+# Example: To make GPIO22 as input and GPIO23 as output
 
 pinMode(22,INPUT_PULLUP);
 
@@ -50,7 +50,7 @@ pinMode(23,OUTPUT);
 
 digitalWrite(23,HIGH);
 
-Analog Input Pins
+# Analog Input Pins
 Note that only a subset of ADC pins and functions are exposed. First, the supplied drivers expose only ADC1. The board layout of the ESP32-DevKitC only exposes some of the pins. Specifically, the following are exposed: ADC1_CH0 , ADC1_CH3 , ADC1_CH4 , ADC1_CH5 , ADC1_CH6 and ADC1_CH7 .
 
 see ESP32 Analog Read Example
@@ -58,7 +58,7 @@ see ESP32 Analog Read Example
 Analog to digital conversion is the ability to read a voltage level found on a pin between 0 and some maximum value and convert that analog value into a digital representation. Varying the voltage applied to the pin will change the value read. The ESP32 has an analog to digital converter built into it with a resolution of up to 12 bits which is 4096 distinct values. What that means is that 0 volts will produce a digital value of 0 while the maximum voltage will produce a digital value of 4095 and voltage ranges between these will produce a correspondingly scaled digital value.
 One of the properties on the analog to digital converter channels is attenuation. This is a voltage scaling factor. Normally the input range is 0-1V but with different attenuations we can scale the input voltage into this range. The available scales beyond the 0-1V include 0-1.34V, 0-2V and 0-3.6V.
 
-Capacitive touch GPIOs
+# Capacitive touch GPIOs
 ESP32 Capacitive Touch Example Code
 
 The ESP32 has 10 internal capacitive touch sensors. These can sense variations in anything that holds an electrical charge, like the human skin. So they can detect variations induced when touching the GPIOs with a finger. These pins can be easily integrated into capacitive pads, and replace mechanical buttons. The capacitive touch pins can also be used to wake up the ESP32 from deep sleep.
@@ -127,7 +127,7 @@ GPIO16 (U2RXD).
 GIIO17 (U2TXD).
 When programming it is named as Serial2.
 
-I2C
+# I2C
 When using the ESP32 with the Arduino IDE, you should use the ESP32 I2C default pins (supported by the Wire library):
 
 GPIO 21 (SDA)
@@ -138,11 +138,8 @@ By default, the pin mapping for SPI is:
 SPI	MOSI	MISO	CLK	CS
 VSPI	GPIO 23	GPIO 19	GPIO 18	GPIO 5
 HSPI	GPIO 13	GPIO 12	GPIO 14	GPIO 15
-Interrupts
+# Interrupts
 All GPIOs can be configured as interrupts.
 
 Enable (EN)
 Enable (EN) is the 3.3V regulator’s enable pin. It’s pulled up, so connect to ground to disable the 3.3V regulator. This means that you can use this pin connected to a pushbutton to restart your ESP32.
-
-GPIO current drawn
-The absolute maximum current drawn per GPIO is source 40mA  and sink 28mAmp according to the “Recommended Operating Conditions” section in the ESP32 datasheet.
