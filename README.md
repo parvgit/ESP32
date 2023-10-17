@@ -19,6 +19,19 @@ Once  Driver is installed Board will show the COM Port in Device manager
 
 ![image](https://github.com/parvgit/ESP32/blob/main/UARTBridge.jpg)
 
+
+## Once Deployed  Successfully you can upload sketch 
+
+https://github.com/parvgit/ESP32/blob/main/LEDBlinkESP32.ino
+
+make sure that while uploading sketch you have to keep BOOT button pressed on the board.
+
+Choose Board from the drop down DOOT ESP32 DEVKIT V1
+In my system board is communicating on COM12 PORT. Check it on device manager befor selecting the port.
+
+![image](https://github.com/parvgit/ESP32/blob/main/FirstCode.jpg)
+
+
 # ESP32
 ![image](https://github.com/parvgit/ESP32/blob/main/ESP32-Pinout.jpg?raw=true)
 
